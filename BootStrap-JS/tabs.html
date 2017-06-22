@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Tabs</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<!-- STEPS FOR ADDING TABS
+	1. Setup basic HTML markup template
+	2. Include bootstrap CSS cdn link, bootstrap JS cdn link (http://getbootstrap.com/getting-started/)
+	3. Include jQuery cdn link (https://developers.google.com/speed/libraries/)
+	4. Add tab HTML markup (http://getbootstrap.com/javascript/#tabs)
+	5. Customize tab navigation by adding/removing li elements in the nav-tabs ul element (be sure to include aria-controls="id of your tab-pane, role="tab", and data-toggle="tab") - also make sure the first li element has a class of active
+	6. Customize tab-pane content
+	 -->
+
+	<!-- TABS -->
+  <h1>Tabs Example</h1>
+  <!-- Nav tabs to trigger showing/hiding corresponding tab-panes -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+    	<h2>Home Section</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae aperiam voluptatem vel molestiae, nihil tenetur ipsum ipsam cupiditate magni perferendis explicabo vero aut molestias cumque. Voluptate molestias sed harum.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+    	<h2>Profile Section</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis minus dolorem cumque maiores asperiores iusto delectus, molestias nihil repellat ipsa quo consequuntur libero eveniet tempora commodi voluptatibus molestiae corporis debitis!</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages">
+    	<h2>Message Section</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cum iste ex eligendi dolorum magnam mollitia sint assumenda necessitatibus. Possimus ipsum voluptatibus magni consectetur fugiat, esse perferendis voluptatum aliquam natus.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="settings">
+    	<h2>Settings Section</h2>
+    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, et incidunt dolore amet numquam ea! Rerum ducimus, ab autem esse harum, optio quidem ea nulla ipsa mollitia sapiente nisi excepturi.</p>
+    </div>
+  </div>
+	<!-- TABS -->
+
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

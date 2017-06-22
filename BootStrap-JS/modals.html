@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Modals</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<!-- STEPS FOR ADDING A MODAL
+	1. Setup basic HTML markup template
+	2. Include bootstrap CSS cdn link, bootstrap JS cdn link (http://getbootstrap.com/getting-started/)
+	3. Include jQuery cdn link (https://developers.google.com/speed/libraries/)
+	4. Add modal HTML markup (http://getbootstrap.com/javascript/#modals)
+	5. Customize modal size to preference (i.e. choose size by adding class 'modal-lg' or 'modal-sm') inside the 'modal-dialog' div
+	6. Add modal title inside the 'modal-title' h4 element
+	7. Add modal content inside the 'modal-body' div
+	 -->
+
+	<!-- MODALS -->
+		<!-- BASIC MODAL -->
+		<h1>Basic Modal Example</h1>
+		<!-- Button trigger modal make sure data-toggle="modal" and data-target="[the id of your modal in this case #myModal]" -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Show #myModal</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">#myModal Title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rem quas aut laborum, iure voluptate perspiciatis, cumque ut maxime odit inventore ipsa dicta accusamus dolores expedita fugit officia. Minus, officia.</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nihil enim aperiam illum nisi tenetur facere quidem possimus libero dolorum, vitae natus cumque? Dolor sapiente fugiat culpa repudiandae, earum quisquam.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- /BASIC MODAL -->
+
+		<br>
+		<br>
+
+		<!-- LARGE MODAL -->
+		<h1>Large Modal Example</h1>
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Large Modal Title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rem quas aut laborum, iure voluptate perspiciatis, cumque ut maxime odit inventore ipsa dicta accusamus dolores expedita fugit officia. Minus, officia.</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nihil enim aperiam illum nisi tenetur facere quidem possimus libero dolorum, vitae natus cumque? Dolor sapiente fugiat culpa repudiandae, earum quisquam.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- /LARGE MODAL -->
+
+		<br>
+		<br>
+
+		<!-- SMALL MODAL -->
+		<h1>Small Modal Example</h1>
+		<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog modal-sm" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Small Modal Title</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rem quas aut laborum, iure voluptate perspiciatis, cumque ut maxime odit inventore ipsa dicta accusamus dolores expedita fugit officia. Minus, officia.</p>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nihil enim aperiam illum nisi tenetur facere quidem possimus libero dolorum, vitae natus cumque? Dolor sapiente fugiat culpa repudiandae, earum quisquam.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- /SMALL MODAL -->
+
+	<!-- MODALS -->
+
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

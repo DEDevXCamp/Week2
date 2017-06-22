@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Carousels</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+	<!-- STEPS FOR ADDING CAROUSELS
+	1. Setup basic HTML markup template
+	2. Include bootstrap CSS cdn link, bootstrap JS cdn link (http://getbootstrap.com/getting-started/)
+	3. Include jQuery cdn link (https://developers.google.com/speed/libraries/)
+	4. Add carousel HTML markup (http://getbootstrap.com/javascript/#carousel)
+	5. Add new slides by copying everything included in the 'item' div
+	6. Add a slide image by entering the path of the image in the src=""
+	7. Add captions by entering text in the 'carousel-caption' div
+	 -->
+
+	<!-- CAROUSELS -->
+  <h1>Basic Carousel Example</h1>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide 1 -->
+      <div class="item active">
+        <img src="http://via.placeholder.com/900x500" alt="First Slide">
+        <div class="carousel-caption">
+          <!-- enter caption content here -->
+          <h3>Slide 1</h3>
+          <p>This is the first slide</p>
+        </div>
+      </div><!-- /.item -->
+
+      <!-- Slide 2 -->
+      <div class="item">
+        <img src="http://via.placeholder.com/900x500" alt="Second Slide">
+        <div class="carousel-caption">
+          <h3>Slide 2</h3>
+          <p>This is the second slide</p>
+        </div>
+      </div><!-- /.item -->
+
+      <!-- Slide 3 -->
+      <div class="item">
+        <img src="http://via.placeholder.com/900x500" alt="Third Slide">
+        <div class="carousel-caption">
+          <h3>Slide 3</h3>
+          <p>This is the third slide</p>
+        </div>
+      </div><!-- /.item -->
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	<!-- CAROUSELS -->
+
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
